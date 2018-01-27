@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Friends Quiz</string>
+    <string name="userName">Enter your name</string>
+    <string name="emptyName">Name is empty. Please enter your name on the top of the screen and click Submit.</string>
+    <string name="question">In question </string>
+    <string name="noAnswerSelected"> you did not choose the answer.</string>
+    <string name="know_friends">How good do you know FRIENDS?</string>
+
+    <string name="question1Number"> 1 </string>
+    <string name="question1">What is Monica\'s biggest pet peeve?</string>
+    <string name="answer1_1">Toast crumbs in the butter dish</string>
+    <string name="answer1_2">Animals dressed as humans.</string> // correct answer
+    <string name="answer1_3">Monkey crap on the furniture</string>
+    <string name="answer1_4">Socks and sandals together</string>
+
+    <string name="question2Number"> 2 </string>
+    <string name="question2">What phenomenon scares the bejeezus out of Chandler?</string>
+    <string name="answer2_1">Michael Flatley, Lord of the Dance!</string> // correct answer
+    <string name="answer2_2">Neck beards</string>
+    <string name="answer2_3">Schreiners</string>
+    <string name="answer2_4">Cleaned house</string>
+
+    <string name="question3Number"> 3 </string>
+    <string name="question3">Monica and Ross have a grandmother who died. What was the grandmother\'s name?</string>
+    <string name="answer3_1">Adelia</string>
+    <string name="answer3_2">Nana</string>
+    <string name="answer3_3">Althea</string>  // correct answer
+    <string name="answer3_4">Alma</string>
+
+    <string name="question4Number"> 4 </string>
+    <string name="question4">Every week, the TV Guide comes to Chandler and Joey\'s apartment. What name appears on the address label?</string>
+    <string name="answer4_1">Chendler Bing</string>
+    <string name="answer4_2">Joey Bing</string>
+    <string name="answer4_3">Chanandelor Bong</string> // correct answer
+    <string name="answer4_4">Monica Geller</string>
+
+    <string name="question5Number"> 5 </string>
+    <string name="question5">What is the name of Chandler\'s father\'s Las Vegas all-male burlesque?</string>
+    <string name="answer5_1">Viva Las Gaygas</string> // correct answer
+    <string name="answer5_2">Male Viva Las Vegas</string>
+    <string name="answer5_3">Burlesqe in Vegas</string>
+    <string name="answer5_4">Moulin Rude</string>
+
+    <string name="question6Number"> 6 </string>
+    <string name="question6">What was Monica\'s nickname when she was a field-hockey goalie?</string>
+    <string name="answer6_1">Roly poly goalie</string>
+    <string name="answer6_2">Big fat goalie</string> // correct answer
+    <string name="answer6_3">Slow monkey</string>
+
+    <string name="question7Number"> 7 </string>
+    <string name="question7">Rachel favorite movies are?</string>
+    <string name="answer7_1">Trainspotting</string>
+    <string name="answer7_2">Dangerous Liaisons</string> // correct answer
+    <string name="answer7_3">Another Forever</string>
+    <string name="answer7_4">Weekend at Bernie\'s</string> // correct answer
+
+    <string name="question8Number"> 8 </string>
+    <string name="question8">What is Joey\'s favorite food?</string>
+    <string name="answer8_1">Spagettie</string>
+    <string name="answer8_2">Sandwiches</string> // correct answer
+    <string name="answer8_3">Pizza</string>
+    <string name="answer8_4">Hot-dog</string>
+
+    <string name="question9Number"> 9 </string>
+    <string name="question9">Monica categorizes her towels. How many categories are there?</string>
+    <string name="enterNumber">Enter number</string>
+
+    <string name="question10Number"> 10 </string>
+    <string name="question10">Joey had an imaginary childhood friend. His name was?</string>
+    <string name="answer10_1">Mike</string>
+    <string name="answer10_2">Tom</string>
+    <string name="answer10_3">Alex</string>
+    <string name="answer10_4">Maurice</string> // correct answer
+
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+
+    <string name="yourScore">, your score is </string>
+    <string name="notGoodKnowledge">You don\'t know much about Friends.</string>
+    <string name="goodJob">Good Job! Congratulations!</string>
+    <string name="goodKnowledge">You have good knowledge about Friends.</string>
+
+</resources>
