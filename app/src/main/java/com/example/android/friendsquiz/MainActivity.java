@@ -1,8 +1,10 @@
 package com.example.android.friendsquiz;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -22,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+
 
     /*
     * This method is called when Submit button was clicked.
@@ -222,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Calculate final score for quiz
-            int quizFinalScore = calculateScore(answer9_1, answer1_2, answer2_1, answer3_3, answer4_3, answer5_1, answer6_2, answer7_1, answer7_2,  answer7_3, answer7_4, answer8_2, answer10_4);
+            int quizFinalScore = calculateScore(answer9_1, answer1_2, answer2_1, answer3_3, answer4_3, answer5_1, answer6_2, answer7_1, answer7_2, answer7_3, answer7_4, answer8_2, answer10_4);
 
             //Checks if the user obtained a result less than or equal to 6. If so, it shows the first toast. If it doesn't, show the second toast.
             if (score <= 6) {
@@ -230,6 +233,10 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(this, name + getString(R.string.yourScore) + " " + quizFinalScore + "\n" + getString(R.string.goodJob) + "\n" + getString(R.string.goodKnowledge), Toast.LENGTH_LONG).show();
             }
+
+            // Set Share score button on Visible
+            Button shareScore = findViewById(R.id.share_score);
+            shareScore.setVisibility(View.VISIBLE);
         }
     }
 
@@ -298,6 +305,13 @@ public class MainActivity extends AppCompatActivity {
     */
     public void clearAllAnswers(View view) {
 
+        //Reset score
+        score = 0;
+
+        // Make invisible button share score
+        Button shareScore = findViewById(R.id.share_score);
+        shareScore.setVisibility(View.INVISIBLE);
+
         //Clear user name
         EditText name = findViewById(R.id.user_name);
         name.setText("");
@@ -347,5 +361,15 @@ public class MainActivity extends AppCompatActivity {
         //Clear answers in question 10
         RadioGroup radioGroup10 = findViewById(R.id.radioGroup10);
         radioGroup10.clearCheck();
+    }
+
+    public void shareScore(View v) {
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.myFriendsQuizScore) + " " + score + getString(R.string.exclamationMark));
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
+
     }
 }

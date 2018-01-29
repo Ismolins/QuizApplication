@@ -8,10 +8,10 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/margin_bottom"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginStart="@dimen/margin_top"
         android:orientation="vertical">
 
         <!-- Field for user name -->
@@ -26,14 +26,15 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="@dimen/margin_bottom">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
                 android:scaleType="centerCrop"
-                android:src="@drawable/friends3" />
+                android:src="@drawable/friends3"
+                android:contentDescription="@string/content_description"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -43,7 +44,7 @@
                 android:gravity="center"
                 android:text="@string/know_friends"
                 android:textColor="#FFFFFF"
-                android:textSize="26sp"
+                android:textSize="@dimen/title_text_size"
                 android:textStyle="bold" />
         </RelativeLayout>
 
@@ -51,16 +52,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question1"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup1">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer1_1"
@@ -91,16 +92,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question2"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup2">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer2_1"
@@ -131,16 +132,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question3"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup3">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer3_1"
@@ -171,16 +172,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question4"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup4">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer4_1"
@@ -211,16 +212,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question5"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup5">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer5_1"
@@ -251,16 +252,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question6"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup6">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer6_1"
@@ -285,10 +286,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question7"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <CheckBox
             android:id="@+id/answer7_1"
@@ -318,16 +319,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question8"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <RadioGroup
+            android:id="@+id/radioGroup8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup8">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer8_1"
@@ -358,32 +359,32 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question9"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
         <EditText
             android:id="@+id/answer9_1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:hint="@string/enterNumber"
-            android:inputType="number"/>
+            android:inputType="number" />
 
+        <!-- Question 10 -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:paddingBottom="16sp"
+            android:layout_marginTop="@dimen/layout_margin_top_text_view"
+            android:paddingBottom="@dimen/padding_bottom_text_view"
             android:text="@string/question10"
-            android:textSize="16sp" />
+            android:textSize="@dimen/question_text_size" />
 
-        <!-- Question 10 -->
         <RadioGroup
+            android:id="@+id/radioGroup10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/radioGroup10">
+            android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/answer10_1"
@@ -407,7 +408,6 @@
                 android:id="@+id/answer10_4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
                 android:text="@string/answer10_4" />
         </RadioGroup>
 
@@ -416,10 +416,11 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/subminAnswers"
+                android:id="@+id/submitAnswers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/layout_margin_bottom_button"
+                android:layout_marginTop="@dimen/layout_margin_top_button"
                 android:background="#AA00FF"
                 android:onClick="submitAnswers"
                 android:text="@string/submit"
@@ -431,9 +432,24 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:layout_marginBottom="20dp"
+                android:layout_marginBottom="@dimen/layout_margin_bottom_button"
+                android:layout_marginTop="@dimen/layout_margin_top_button"
                 android:onClick="clearAllAnswers"
                 android:text="@string/reset" />
+
+            <Button
+                android:id="@+id/share_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/layout_margin_bottom_button"
+                android:layout_marginTop="@dimen/layout_margin_top_button"
+                android:layout_toEndOf="@+id/submitAnswers"
+                android:layout_toRightOf="@+id/submitAnswers"
+                android:onClick="shareScore"
+                android:visibility="invisible"
+                android:text="@string/share_score" />
+
         </RelativeLayout>
     </LinearLayout>
 

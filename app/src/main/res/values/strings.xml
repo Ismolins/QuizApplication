@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Friends Quiz</string>
+    <string name="content_description">Six Friends sitting in one chair.</string>
     <string name="userName">Enter your name</string>
     <string name="emptyName">Name is empty. Please enter your name on the top of the screen and click Submit.</string>
     <string name="question">In question </string>
@@ -24,7 +25,7 @@
     <string name="question3">Monica and Ross have a grandmother who died. What was the grandmother\'s name?</string>
     <string name="answer3_1">Adelia</string>
     <string name="answer3_2">Nana</string>
-    <string name="answer3_3">Althea</string>  // correct answer
+    <string name="answer3_3">Althea</string> // correct answer
     <string name="answer3_4">Alma</string>
 
     <string name="question4Number"> 4 </string>
@@ -74,10 +75,14 @@
 
     <string name="submit">Submit</string>
     <string name="reset">Reset</string>
+    <string name="share_score">Share score</string>
 
     <string name="yourScore">, your score is </string>
     <string name="notGoodKnowledge">You don\'t know much about Friends.</string>
     <string name="goodJob">Good Job! Congratulations!</string>
     <string name="goodKnowledge">You have good knowledge about Friends.</string>
+
+    <string name="myFriendsQuizScore">My Friends Quiz App score is </string>
+    <string name="exclamationMark">!</string>
 
 </resources>
